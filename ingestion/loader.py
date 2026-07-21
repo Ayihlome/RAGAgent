@@ -11,8 +11,7 @@ FILE_PATH = "docs\\CICIPipelineArticle.pdf"
 loader = PyPDFLoader(file_path=FILE_PATH)
 # returns chunks
 
-document = loader.load()
+chunks = loader.load() #list of the documents chunks
+print("Chunks loaded...\n")
 
-print("Chunks: \n")
-for chunk in document:
-    print(f"- {chunk.page_content=}\n")
+
