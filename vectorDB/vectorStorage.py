@@ -17,7 +17,7 @@ class VectorDB:
         loader = PyPDFLoader(file_path=self.FILE_PATH)
         
         self.chunks = loader.load()
-        print(f"Chunks loaded...(Chunks: {len(self.chunks)})\n")
+        print(f"Chunks loaded...(Chunks: {len(self.chunks)})")
     
     def initDB(self):
         self.db = Chroma.from_documents(
@@ -46,19 +46,19 @@ class VectorDB:
         
         return documents
 
-vDB = VectorDB()
-vDB.load_chunks()
-vDB.initDB()
+# vDB = VectorDB()
+# vDB.load_chunks()
+# vDB.initDB()
 
 
-# Temp RAG testin
-results = vDB.search(
-    "What is  Multi-Layer Automated Testing",
-    kValue=3
-)
+# # Temp RAG testin
+# results = vDB.search(
+#     "What is  Multi-Layer Automated Testing",
+#     kValue=3
+# )
 
-for i, doc in enumerate(results):
-    print(f"\nResult {i+1}")
-    print(doc["content"])
-    print("Metadata: ",doc["metadata"])
-    print("Score: ",doc["score"])
+# for i, doc in enumerate(results):
+#     print(f"\nResult {i+1}")
+#     print(doc["content"])
+#     print("Metadata: ",doc["metadata"])
+#     print("Score: ",doc["score"])
