@@ -1,0 +1,38 @@
+{
+    "session_info": {
+        "session_id": "f59a421f-6fb9-47f1-9fe8-01402305eb5e",
+        "trace_id": "e526eb17-b6b8-4171-aebe-ccbc827164e1",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 10:47:02.742406",
+        "end_time": "2026-07-23 10:49:49.533558",
+        "total_tokens": 7.800000000000001,
+        "token_usage": 0.00609375
+    },
+    "conversation": {
+        "session_id": "f59a421f-6fb9-47f1-9fe8-01402305eb5e",
+        "user_prompt": "What is a CI/CD pipeline for?",
+        "final_response": null
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "e526eb17-b6b8-4171-aebe-ccbc827164e1",
+        "user_prompt": "What is a CI/CD pipeline for?",
+        "doc_tokens": 23.400000000000002,
+        "retrieval": [
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
