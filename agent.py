@@ -1,8 +1,10 @@
-from vectorDB.vectorStorage import VectorDB
+from vectorDB.vectorStorage import VectorDB, NoRelevantDocumentsError
 from langchain_ollama import OllamaLLM
+from contextManager.contextManager import ConversationManger
 from logger.agentLogger import AgentLogger
 
 log = AgentLogger()
+messages = ConversationManger()
 
 log.startSession()
 # Startup DB
@@ -11,33 +13,43 @@ vectorDB = VectorDB()
 vectorDB.load_chunks()
 vectorDB.initDB()
 
+
 # Setup LangChain agent
 model = OllamaLLM(
     model="gemma4:e2b",
     temperature=0.1
 )
-print("Model loaded...")
+print("Model loaded...\n")
 
-# context builder
-prompt = "What is a CI/CD pipeline for?"
-rag = vectorDB.search(prompt=prompt, kValue=3)
-
-def contextBuilder(userPrompt: str, RAGresponse:list[dict]) -> str:
-    sysPrompt = f"""You are a software engineer assistant that answers user questions, 
-    in short and easy to understand paragraphs, based off of documents uploaded. 
-    Here is the users question: {userPrompt}
-    Here is the relevant information that you should use to answer the question: {[txt["content"] for txt in RAGresponse]}
-    At the end of every response also include this information: 
-    - Citation: Page {[txt["metadata"]["page_label"] for txt in RAGresponse]}, source: {[txt["metadata"]["source"] for txt in RAGresponse]}"""
+while True:
+    try:
+        prompt = str(input("\n    >>"))
+    except KeyboardInterrupt:
+        print("\nExiting...")
+        break
     
-    return sysPrompt
+    
+    try:
+        retrieved_docs = vectorDB.search(prompt=prompt, kValue=3)
+    except NoRelevantDocumentsError:
+        print("Sorry, I couldn't find information about that in the knowledge base.")
+        continue
+    
+    # context builder
+    context = messages.build_context(prompt=prompt, docs=retrieved_docs)
+    print("Current Context: ", context)
+    print("Processing response....\n")
+    
+    # response = model.invoke(context)
+    chunks = model.stream(context)
 
-# call model
-context = contextBuilder(userPrompt=prompt, RAGresponse=rag)
+    for chunk in chunks:
+        print(chunk, end='', flush=True)
+    
+    
 
-print("Processing response....")
-response = model.invoke(context)
-print("Response:\n", response)
-log.retrievalCheck(prompt=prompt, finalresponse=response RAGresponse=rag)
+log.retrievalCheck(prompt=prompt, finalResponse=chunks, RAGresponse=retrieved_docs)
 log.endSession()
 log.saveLog()
+
+

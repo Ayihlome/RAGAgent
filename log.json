@@ -36,3 +36,161 @@
         ]
     }
 }
+{
+    "session_info": {
+        "session_id": "fa1f8a11-b353-4f0d-9629-e0e0f962295c",
+        "trace_id": "8a9c53c8-ccae-47b4-987a-5eb7046c947a",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 15:08:46.669130",
+        "end_time": "2026-07-23 15:10:29.480086",
+        "total_tokens": 3.9000000000000004,
+        "token_usage": 0.003046875
+    },
+    "conversation": {
+        "session_id": "fa1f8a11-b353-4f0d-9629-e0e0f962295c",
+        "user_prompt": "What is CI\\CD?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "8a9c53c8-ccae-47b4-987a-5eb7046c947a",
+        "user_prompt": "What is CI\\CD?",
+        "doc_tokens": 0,
+        "retrieval": []
+    }
+}
+{
+    "session_info": {
+        "session_id": "24a80b35-c74f-4ec4-85d0-68093c32fcc3",
+        "trace_id": "77783647-e990-4f92-800b-c03426e0e331",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 15:18:40.564730",
+        "end_time": "2026-07-23 15:22:32.181871",
+        "total_tokens": 3.9000000000000004,
+        "token_usage": 0.003046875
+    },
+    "conversation": {
+        "session_id": "24a80b35-c74f-4ec4-85d0-68093c32fcc3",
+        "user_prompt": "What is CI\\CD?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "77783647-e990-4f92-800b-c03426e0e331",
+        "user_prompt": "What is CI\\CD?",
+        "doc_tokens": 0,
+        "retrieval": []
+    }
+}
+{
+    "session_info": {
+        "session_id": "3d85e8ee-f220-431c-85ac-0d3c2fac8375",
+        "trace_id": "913a750f-c389-4f23-adc3-438a8ab8a362",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:24:40.412374",
+        "end_time": "2026-07-23 23:26:07.210229",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "3d85e8ee-f220-431c-85ac-0d3c2fac8375",
+        "user_prompt": "What is Continuous Integration?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "913a750f-c389-4f23-adc3-438a8ab8a362",
+        "user_prompt": "What is Continuous Integration?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "c5335391-8f7b-4940-9776-7d4be02db8cb",
+        "trace_id": "2ea2befa-9b0a-4882-9f22-c360e20b536f",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:28:47.858389",
+        "end_time": "2026-07-23 23:32:26.235221",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "c5335391-8f7b-4940-9776-7d4be02db8cb",
+        "user_prompt": "What is Continuous Integration?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "2ea2befa-9b0a-4882-9f22-c360e20b536f",
+        "user_prompt": "What is Continuous Integration?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "eb11fcc1-0187-4358-877f-cbac9736be80",
+        "trace_id": "dbfbb2c8-eef0-4473-9adb-6c72a6228f6d",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:39:45.343060",
+        "end_time": "2026-07-23 23:45:12.533122",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "eb11fcc1-0187-4358-877f-cbac9736be80",
+        "user_prompt": "What does it have to do with saftey-critical embedded systems?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "dbfbb2c8-eef0-4473-9adb-6c72a6228f6d",
+        "user_prompt": "What does it have to do with saftey-critical embedded systems?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}

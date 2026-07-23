@@ -27,6 +27,7 @@ class VectorDB:
         )
     
     def search(self, prompt: str, kValue: int) -> list[dict]:
+        print("[DB] user prompt: ", prompt)
         result = self.db.similarity_search_with_score(query=prompt, k=kValue)
         
         documents = []
@@ -44,21 +45,12 @@ class VectorDB:
                     "score":score
                 })
         
+        if not documents:
+            raise NoRelevantDocumentsError(f"No relevant document on topic: '{prompt}'.")
+        
         return documents
 
-# vDB = VectorDB()
-# vDB.load_chunks()
-# vDB.initDB()
 
-
-# # Temp RAG testin
-# results = vDB.search(
-#     "What is  Multi-Layer Automated Testing",
-#     kValue=3
-# )
-
-# for i, doc in enumerate(results):
-#     print(f"\nResult {i+1}")
-#     print(doc["content"])
-#     print("Metadata: ",doc["metadata"])
-#     print("Score: ",doc["score"])
+class NoRelevantDocumentsError(Exception):
+    """Raised when no relevant documents are found."""
+    pass

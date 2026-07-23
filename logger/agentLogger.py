@@ -34,18 +34,19 @@ class AgentLogger:
             model="gemma4:e2b",
             temperature=0.1
         )
-        self.session.total_tokens = len(self.messages[0].split()) * 1.3
+        self.session.total_tokens = len([content.split() for content in self.messages]) * 1.3
         self.session.token_usage = (self.session.total_tokens / 128000) * 100
     
-    def retrievalCheck(self, prompt: str, finalresponse:str,  RAGresponse: list[dict]):
+    def retrievalCheck(self, prompt: str, finalResponse:list,  RAGresponse: list[dict]):
         self.conversation.user_prompt = prompt
         self.retrievalDiagnostic.user_prompt = prompt
         self.messages.append(prompt)
-        self.conversation.final_response = finalresponse
+        for chunk in finalResponse:
+            self.conversation.final_response += chunk
         
 
         for txt in RAGresponse:
-            self.retrievalDiagnostic.doc_tokens +=  len(self.messages[0].split()) * 1.3
+            self.retrievalDiagnostic.doc_tokens +=  len([content.split() for content in self.messages]) * 1.3
         
         for txtObj in RAGresponse:
             self.retrievalDiagnostic.retrieval.append({
@@ -90,5 +91,5 @@ class Conversation:
     session_id : int
     
     user_prompt : str | None = None
-    final_response : str | None = None
+    final_response : str = ""
     # citation : str # or a dictionary of {"page": 3, "doc":"thisdoc.pdf"}
