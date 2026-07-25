@@ -25,6 +25,7 @@ while True:
     try:
         prompt = str(input("\n    >>"))
     except KeyboardInterrupt:
+        
         print("\nExiting...")
         break
     
@@ -37,18 +38,20 @@ while True:
     
     # context builder
     context = messages.build_context(prompt=prompt, docs=retrieved_docs)
-    print("Current Context: ", context)
+    print("Current Context: ", context[1].response_metadata)
     print("Processing response....\n")
     
+    final_response = ""
     # response = model.invoke(context)
     chunks = model.stream(context)
-
+    
     for chunk in chunks:
         print(chunk, end='', flush=True)
+        final_response += chunk  # or chunk depending on your model
     
     
 
-log.retrievalCheck(prompt=prompt, finalResponse=chunks, RAGresponse=retrieved_docs)
+log.retrievalCheck(prompt=prompt, finalResponse=final_response, RAGresponse=retrieved_docs)
 log.endSession()
 log.saveLog()
 
