@@ -1,0 +1,272 @@
+{
+    "session_info": {
+        "session_id": "f59a421f-6fb9-47f1-9fe8-01402305eb5e",
+        "trace_id": "e526eb17-b6b8-4171-aebe-ccbc827164e1",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 10:47:02.742406",
+        "end_time": "2026-07-23 10:49:49.533558",
+        "total_tokens": 7.800000000000001,
+        "token_usage": 0.00609375
+    },
+    "conversation": {
+        "session_id": "f59a421f-6fb9-47f1-9fe8-01402305eb5e",
+        "user_prompt": "What is a CI/CD pipeline for?",
+        "final_response": null
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "e526eb17-b6b8-4171-aebe-ccbc827164e1",
+        "user_prompt": "What is a CI/CD pipeline for?",
+        "doc_tokens": 23.400000000000002,
+        "retrieval": [
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7435654401779175,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "fa1f8a11-b353-4f0d-9629-e0e0f962295c",
+        "trace_id": "8a9c53c8-ccae-47b4-987a-5eb7046c947a",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 15:08:46.669130",
+        "end_time": "2026-07-23 15:10:29.480086",
+        "total_tokens": 3.9000000000000004,
+        "token_usage": 0.003046875
+    },
+    "conversation": {
+        "session_id": "fa1f8a11-b353-4f0d-9629-e0e0f962295c",
+        "user_prompt": "What is CI\\CD?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "8a9c53c8-ccae-47b4-987a-5eb7046c947a",
+        "user_prompt": "What is CI\\CD?",
+        "doc_tokens": 0,
+        "retrieval": []
+    }
+}
+{
+    "session_info": {
+        "session_id": "24a80b35-c74f-4ec4-85d0-68093c32fcc3",
+        "trace_id": "77783647-e990-4f92-800b-c03426e0e331",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 15:18:40.564730",
+        "end_time": "2026-07-23 15:22:32.181871",
+        "total_tokens": 3.9000000000000004,
+        "token_usage": 0.003046875
+    },
+    "conversation": {
+        "session_id": "24a80b35-c74f-4ec4-85d0-68093c32fcc3",
+        "user_prompt": "What is CI\\CD?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "77783647-e990-4f92-800b-c03426e0e331",
+        "user_prompt": "What is CI\\CD?",
+        "doc_tokens": 0,
+        "retrieval": []
+    }
+}
+{
+    "session_info": {
+        "session_id": "3d85e8ee-f220-431c-85ac-0d3c2fac8375",
+        "trace_id": "913a750f-c389-4f23-adc3-438a8ab8a362",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:24:40.412374",
+        "end_time": "2026-07-23 23:26:07.210229",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "3d85e8ee-f220-431c-85ac-0d3c2fac8375",
+        "user_prompt": "What is Continuous Integration?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "913a750f-c389-4f23-adc3-438a8ab8a362",
+        "user_prompt": "What is Continuous Integration?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "c5335391-8f7b-4940-9776-7d4be02db8cb",
+        "trace_id": "2ea2befa-9b0a-4882-9f22-c360e20b536f",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:28:47.858389",
+        "end_time": "2026-07-23 23:32:26.235221",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "c5335391-8f7b-4940-9776-7d4be02db8cb",
+        "user_prompt": "What is Continuous Integration?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "2ea2befa-9b0a-4882-9f22-c360e20b536f",
+        "user_prompt": "What is Continuous Integration?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.8740692734718323,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "eb11fcc1-0187-4358-877f-cbac9736be80",
+        "trace_id": "dbfbb2c8-eef0-4473-9adb-6c72a6228f6d",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-23 23:39:45.343060",
+        "end_time": "2026-07-23 23:45:12.533122",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "eb11fcc1-0187-4358-877f-cbac9736be80",
+        "user_prompt": "What does it have to do with saftey-critical embedded systems?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "dbfbb2c8-eef0-4473-9adb-6c72a6228f6d",
+        "user_prompt": "What does it have to do with saftey-critical embedded systems?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.7082590460777283,
+                "page": "2",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "05144330-22a5-488d-a5bf-243cc0a67214",
+        "trace_id": "9ce9ec2e-b783-4436-ae10-fc5c9146baab",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-24 00:24:19.185701",
+        "end_time": "2026-07-24 00:34:35.917896",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "05144330-22a5-488d-a5bf-243cc0a67214",
+        "user_prompt": "What are First Principles of Automated Integration Pipelines?",
+        "final_response": ""
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "9ce9ec2e-b783-4436-ae10-fc5c9146baab",
+        "user_prompt": "What are First Principles of Automated Integration Pipelines?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.710867166519165,
+                "page": "9",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.710867166519165,
+                "page": "9",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            },
+            {
+                "score": 0.710867166519165,
+                "page": "9",
+                "source": "docs\\CICIPipelineArticle.pdf"
+            }
+        ]
+    }
+}
+{
+    "session_info": {
+        "session_id": "82a2b769-2018-45c0-9d5e-0522467333ad",
+        "trace_id": "e6de48f0-377d-46ae-bae7-abfd1d7f3b49",
+        "model": "gemma4:e2b",
+        "start_time": "2026-07-24 11:51:48.723894",
+        "end_time": "2026-07-24 13:35:06.877503",
+        "total_tokens": 1.3,
+        "token_usage": 0.001015625
+    },
+    "conversation": {
+        "session_id": "82a2b769-2018-45c0-9d5e-0522467333ad",
+        "user_prompt": "What is OpenID Connect OIDC Identity Federation?",
+        "final_response": "OpenID Connect (OIDC) Identity Federation is a model used in modern pipelines to secure how Continuous Integration/Continuous Deployment (CI/CD) platforms authenticate with public cloud providers. This approach allows the CI/CD platform to gain access to the cloud provider without relying on traditional, insecure static credentials like long-lived access keys.\n\nThis identity federation model addresses security challenges by enabling dynamic authentication during execution. The process involves a flow where the CI/CD runner requests an OpenID Connect Token (JWT) from the runner provider. This token is then presented to the cloud provider's Security Token Service (STS) using the web identity assume-role API for validation.\n\nDuring this process, the Cloud STS validates the JWT's signature and evaluates identity conditions defined on the destination IAM role. If the checks pass, STS issues short-lived, scoped credentials to the runner, which are then used to deploy resources.\n\n- Citation: Page 4, Source docs\\CICD_ResearchIntroduction.pdf"
+    },
+    "Retrieval Diagnostics": {
+        "trace_id": "e6de48f0-377d-46ae-bae7-abfd1d7f3b49",
+        "user_prompt": "What is OpenID Connect OIDC Identity Federation?",
+        "doc_tokens": 3.9000000000000004,
+        "retrieval": [
+            {
+                "score": 0.7095481157302856,
+                "page": "5",
+                "source": "docs\\CICD_ResearchIntroduction.pdf"
+            },
+            {
+                "score": 0.7095481157302856,
+                "page": "5",
+                "source": "docs\\CICD_ResearchIntroduction.pdf"
+            },
+            {
+                "score": 0.7095481157302856,
+                "page": "5",
+                "source": "docs\\CICD_ResearchIntroduction.pdf"
+            }
+        ]
+    }
+}
